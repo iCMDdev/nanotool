@@ -12,7 +12,7 @@ A nano-sized weather station based on a Raspberry Pi with an API and an iOS app.
 ###### Cititi mai multe informatii despre aplicatie [aici](/app/info.md).
 
 ###  Senzori
-<img align="left" src="/repoAssets/nanotool.png" width="50" alt="Nanotool logo">Stația include mulți senzori ce permit monitorizarea vremii. Datele acestora sunt înregistrate zilnic într-un spreadsheet .csv, ce poate fi accesat prin API sub formă de JSON / descărcat.<br/></br>Senzorii folosiți sunt:
+<img align="left" src="/repoAssets/nanotoolSensors.png" width="50" alt="Nanotool logo">Stația include mulți senzori ce permit monitorizarea vremii. Datele acestora sunt înregistrate zilnic într-un spreadsheet .csv, ce poate fi accesat prin API sub formă de JSON / descărcat.<br/></br>Senzorii folosiți sunt:
    - <b>Anemometru</b> - măsoară viteza vântului 
    - <b>Pluviometru</b> - măsoară cantitatea de apă provenită de la ploaie într-un interval de timp dat
    - <b>BMP280</b> - măsoară temperatura și presiunea barometrică a aerului
