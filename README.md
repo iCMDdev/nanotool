@@ -4,7 +4,7 @@ A nano-sized weather station based on a Raspberry Pi with an API and an iOS app.
 ## Tehnologii
 
 ###  Built-in API
-<img align="left" src="/repoAssets/nanotoolAPI.png" width="50" alt="Nanotool logo"> Nanotool are un API built-in scris cu ajutorul Flask (Python).<br/>Acesta usureaza comunicarea cu statia meteo, dar si crearea unor accesorii ce folosesc acest API. <br/> API-ul trimite raspunsuri JSON la request-uri de tip GET / POST, sau fișiere CSV atunci când datele înregistrate de senzori sunt descărcate.
+<img align="left" src="/repoAssets/nanotoolAPI.png" width="50" alt="Nanotool logo"> Nanotool are un API built-in scris cu ajutorul Flask (Python).<br/>Acesta usureaza comunicarea cu statia meteo, dar si crearea unor accesorii ce folosesc acest API. API-ul trimite raspunsuri JSON la request-uri de tip GET / POST, sau fișiere CSV atunci când datele înregistrate de senzori sunt descărcate.
 ###### Cititi mai multe informatii despre software si API [aici](/software/info.md).
 
 ###  iOS & Mac Catalyst App
