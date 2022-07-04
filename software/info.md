@@ -4,6 +4,8 @@ Acest folder contine codul sursa al statiei meteo, scris pentru Raspberry Pi.
 De asemenea, acest folder contine si un makefile ce poate fi folosit pentru a instala acest software cu usurinta pe hardware, precum si dependency-urile acestuia.
 
 # Install
+Installer-ul necesita o conexiune activa la internet si privilegii root.
+
 Descarcati installer-ul makefile de la [Releases](https://github.com/iCMDgithub/nanotool/releases) pe Raspberry Pi, apoi navigati spre locatia acestuia in filesystem folosind urmatoarea comanda in terminal:
 ```
 cd Path_Spre_Makefile
