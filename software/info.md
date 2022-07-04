@@ -1,4 +1,4 @@
-# Nanotool Raspberry Pi software
+# Nanotool Raspberry Pi Software
 
 Acest folder contine codul sursa al statiei meteo, scris pentru Raspberry Pi.
 De asemenea, acest folder contine si un makefile ce poate fi folosit pentru a instala acest software cu usurinta pe hardware, precum si dependency-urile acestuia.
