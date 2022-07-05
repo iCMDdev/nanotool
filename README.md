@@ -1,5 +1,5 @@
 # <img align="left" src="/repoAssets/nanotool.png" width="100" alt="Nanotool logo"> Nanotool
-A nano-sized weather station based on a Raspberry Pi with an API and an iOS app.
+A nano-sized weather station based on a Raspberry Pi with an API and an iOS & Mac Catalyst app.
 
 ## Tehnologii
 
