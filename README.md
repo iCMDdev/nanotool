@@ -13,7 +13,7 @@ Uneori este necesar un răspuns instant la acțiunea vremii, însă cand suntem 
 Controlul stației este ușurat de aplicația pentru iPhone, iPad și Mac.
 
 ## Tehnologii
-Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullseye, 64-bit). Pe acesta rulează la boot un script Python ce salvează zilnic datele înregistrate de senzori. Acesta conține și server-ul web (API), care este folosit de aplicația pentru iOS și Mac pentru comunicarea cu stația meteo.
+Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullseye, 64-bit). La boot, aceasta rulează un script Python ce salvează zilnic datele înregistrate de senzori. Acesta conține și server-ul web API, care este folosit de aplicația pentru iOS și Mac pentru comunicarea cu stația meteo.
 
 ###  Built-in API
 <img align="left" src="/repoAssets/nanotoolAPI.png" width="50" alt="Nanotool logo"> Nanotool are un API built-in scris cu ajutorul Flask (Python).<br/>Acesta usureaza comunicarea cu statia meteo, dar si crearea unor accesorii ce folosesc acest API. API-ul trimite raspunsuri JSON la request-uri de tip GET / POST, sau fișiere CSV atunci când datele înregistrate de senzori din zilele precedente sunt descărcate.</br>
@@ -42,13 +42,13 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
    - prin SSH
 
 ### I2C
-Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica cu Raspberry Pi-ul. Printre acestea se numără:
+Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica cu Raspberry Pi-ul:
    - <b>LCD 20x4 HD44780</b> - display de 80 caractere
    - <b>BMP280</b> - senzor de temperatură și presiune
    - <b>ADS1115</b> - convertor Analog la Digital (ADC), folosit la giruetă
    
 ### Librăria CharPi
-toate informațiile importante sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere, folosind librăria CharPi pentru Python, realizată de mine.
+Toate informațiile importante sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere, folosind librăria CharPi pentru Python, realizată de mine.
 
 ## Legal
 iPhone, iPad, Mac, Mac Catalyst si Xcode sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni. IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco în S.U.A. și în alte țări. Raspberry Pi este o marcă a Raspberry Pi Ltd.
