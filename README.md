@@ -23,6 +23,8 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM). Pe acesta rulează un script P
 <img align="left" src="/repoAssets/nanotoolApp.png" width="50" alt="Nanotool logo"> Stația meteo Nanotool dispune de o aplicație care foloseste API-ul pentru a comunica cu aceasta.<br/>Aplicatia afișează date live ale vremii, cât și un istoric pe zile. Acestea sunt dispuse sub formă de grafice.<br/>
 ###### Cititi mai multe informatii despre aplicatie [aici](/app/info.md).
 
+### Sarcini automatizate (“Automated Tasks”)
+<img align="left" src="/repoAssets/nanotoolAuto.png" width="50" alt="Nanotool Automated Tasks logo"> Sarcinile automatizate oferă un răspuns instant la acțiunile vremii. Când o anumită condiție este respectată pentru un anumit timp (valoarea înregistrată de un senzor atinge o anumită valoare), atunci poate fi pornit / oprit unul dintre cele 4 relee. Acestea pot fi configurate cu usurinta prin API si aplicatie.
 
 ###  Senzori
 <img align="left" src="/repoAssets/nanotoolSensors.png" width="50" alt="Nanotool logo">Stația include mulți senzori ce permit monitorizarea vremii. Datele acestora sunt înregistrate zilnic într-un spreadsheet .csv, ce poate fi accesat prin API sub formă de JSON / descărcat.<br/></br>Senzorii folosiți sunt:
