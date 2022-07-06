@@ -22,7 +22,7 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
 ###### Cititi mai multe informatii despre aplicatie [aici](/app/info.md).
 
 ### Sarcini automatizate (“Automated Tasks”)
-<img align="left" src="/repoAssets/nanotoolAuto.png" width="50" alt="Nanotool Automated Tasks logo"> Sarcinile automatizate oferă un răspuns instant la acțiunile vremii. Când o anumită condiție este respectată pentru un anumit timp (valoarea înregistrată de un senzor atinge o anumită valoare), atunci poate fi pornit / oprit unul dintre cele 4 relee. Acestea pot fi configurate cu usurinta prin API si aplicatie.
+<img align="left" src="/repoAssets/nanotoolAuto.png" width="50" alt="Nanotool Automated Tasks logo"> Sarcinile automatizate oferă un răspuns instant la acțiunile vremii. Când o anumită condiție este respectată pentru un anumit timp (valoarea înregistrată de un senzor atinge o anumită valoare), atunci poate fi pornit / oprit unul dintre cele 4 relee. Sarcinile pot fi configurate cu usurinta prin API si aplicatie.
 
 ###  Senzori
 <img align="left" src="/repoAssets/nanotoolSensors.png" width="50" alt="Nanotool logo">Stația include mulți senzori ce permit monitorizarea vremii. Datele acestora sunt înregistrate zilnic într-un spreadsheet .csv, ce poate fi accesat prin API sub formă de JSON / descărcat.<br/></br>Senzorii folosiți sunt:
@@ -39,14 +39,14 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
    - prin controlul direct al plăcii folosind o tastatură și un display (placa poate fi scoasă din cutie cu ușurință pentru a o conecta la un display)
    - prin SSH
 
+### Display-ul LCD & librăria CharPi
+Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rats de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată de mine.
+
 ### I2C
 Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica cu Raspberry Pi-ul:
    - <b>LCD 20x4 HD44780</b> - display de 80 caractere
    - <b>BMP280</b> - senzor de temperatură și presiune
    - <b>ADS1115</b> - convertor Analog la Digital (ADC), folosit la giruetă
    
-### Display-ul LCD & librăria CharPi
-Toate informațiile importante sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rats de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată de mine.
-
 ## Legal
 iPhone, iPad, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
