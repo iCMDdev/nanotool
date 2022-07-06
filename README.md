@@ -40,7 +40,7 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
    - prin SSH
 
 ### Display-ul LCD & librăria CharPi
-Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rats de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată de mine.
+Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată de mine.
 
 ### I2C
 Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica cu Raspberry Pi-ul:
