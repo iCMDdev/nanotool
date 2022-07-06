@@ -4,7 +4,7 @@ A nano-sized weather station based on a Raspberry Pi with an API and an iOS & Ma
 ## Descriere
 Vremea este deseori instabilă și imprevizibilă. În plus, în multe locații nu se află stații meteo în apropiere, așa că prognoza pentru aceste zone nu este întocmai corectă. Multe acțiuni ale noastre depind de vreme, de la cum ne îmbrăcăm, până la udarea florilor. Cert este că trebuie să fim bine informați despre aceasta. Stația meteo nanotool rezolvă aceste probleme.<br/>
 
-Nanotool este o stație meteo ce are la bază un Raspberry Pi 4B. Aceasta are conectați mai mulți senzori ce o ajut să monitorizeze condițiile atmosferice.
+Nanotool este o stație meteo ce are la bază un Raspberry Pi 4B. Aceasta are conectați mai mulți senzori ce monitorizează condițiile atmosferice.
 
 Pentru a o înțelege cât mai bine, vremea trebuie monitorizată. Stația monitorizează zilnic vremea (mai precis, viteza si directia vantului, cantitatea de ploaie, temperatura, presiunea si umiditatea aerului) și înregistrează datele, pentru a putea fi vizualizate sub formă de grafic în orice moment.<br/>
 
