@@ -49,4 +49,4 @@ Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica c
    - <b>ADS1115</b> - convertor Analog la Digital (ADC), folosit la giruetă
    
 ## Legal
-iPhone, iPad, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
+iPhone, iPad, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
