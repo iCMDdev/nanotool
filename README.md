@@ -1,5 +1,5 @@
 # <img align="left" src="/repoAssets/nanotool.png" width="100" alt="Nanotool logo"> Nanotool
-A nano-sized weather station based on a Raspberry Pi with an API, an iOS & Mac Catalyst app, and sensor-based automations.
+A nano-sized weather station based on a Raspberry Pi with an API, iOS & Mac Catalyst app, and sensor-based automations.
 
 ## Descriere
 Vremea este deseori instabilă și imprevizibilă. În plus, în multe locații nu se află stații meteo în apropiere, așa că prognoza pentru aceste zone nu este întocmai corectă. Multe acțiuni ale noastre depind de vreme, de la cum ne îmbrăcăm, până la udarea florilor. Cert este că trebuie să fim bine informați despre aceasta. Stația meteo Nanotool rezolvă aceste probleme.<br/>
@@ -40,7 +40,7 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
    - prin SSH
 
 ### Display-ul LCD & librăria CharPi
-Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată de mine.
+Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată tot de creatorul stației Nanotool.
 
 ### I2C
 Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica cu Raspberry Pi-ul:
