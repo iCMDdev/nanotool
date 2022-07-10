@@ -3,6 +3,9 @@
 Acest folder contine codul sursa al statiei meteo, scris pentru Raspberry Pi.
 De asemenea, acest folder contine si un makefile ce poate fi folosit pentru a instala acest software cu usurinta pe hardware, precum si dependency-urile acestuia.
 
+# Description
+Nanotool rulează la boot un script Python, ce efectuează măsurătorile cu ajutorul senzorilor și pornește server-ul web API, realizat cu ajutorul Flask. Acesta conține mai multe thread-uri dedicate fiecărui senzor și activitate (precum salvarea datelor la un interval de timp). 
+
 # Install
 Installer-ul necesita o conexiune activa la internet si privilegii root.
 
@@ -32,8 +35,8 @@ python3 ~/webapi.py
 ```
 
 # Securitatea API-ului
-Este recomandata crearea unui user cu privilegii inferioare unui user de tip sudo, care sa aaiba doar atributiile necesare pentru a rula API-ul.
-Makefile-ul seteaza automat o variabila de environment pentru ca API-ul, scris in Flask, sa ruleze cu setarile de production (nu de development).
+Este recomandata crearea unui user cu privilegii inferioare unui user de tip sudo, care sa aiba doar atribuțiile necesare pentru a rula API-ul.
+API-ul, scris in Flask, rulează cu setările de production (nu de development).
 
 # Legal
 Raspberry Pi este o marcă a Raspberry Pi Ltd.
