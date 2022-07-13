@@ -1,7 +1,13 @@
 # Nanotool iOS & Mac Catalyst App
 Acest folder contine aplicatia Nanotool pentru iPhone, iPad si Mac, sub forma unui proiect Xcode. 
 
-Necesita ultima versiune de Xcode 13 pentru build-ul aplicatiei si instalarea acesteia pe un dispozitiv. Este posibil ca versiunile mai recente sa functioneze in viitor, precum Xcode 14 (codul a fost testat si pe Xcode 14 Beta 1 & 2).
+Necesită ultima versiune de Xcode 13 pentru build-ul aplicației și instalarea acesteia pe un dispozitiv. Este posibil ca versiunile mai recente să functioneze în viitor, precum Xcode 14 (codul a fost testat si pe Xcode 14 Beta 1 & 2).
+
+Aplicația este realizată în întregime in Swift. Aceasta foloseste SwiftUI și este compusă din mai multe View-uri (pentru senzori, relee, setări și
+automatizări), precum și modele (pentru date, grafice si automatizări).
+
+Aplicația respectă regulile de thread concurrency ce vor fi aplicate începând cu Swift 6. Comunicarea cu API-ul se face prin functii asincronizate async
+await, find astfel foarte responsive si neavând delay-uri.
 
 # Legal
 iPhone, iPad, Mac, Mac Catalyst si Xcode sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.
