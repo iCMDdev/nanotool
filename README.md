@@ -40,7 +40,7 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
    - prin SSH
 
 ### Materiale reciclate
-Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, electroncasnice uzate, hard disk-uri. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.
+Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, electronice și electroncasnice uzate, hard disk-uri. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.
 
 ### Display-ul LCD & librăria CharPi
 Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată tot de creatorul stației Nanotool.
