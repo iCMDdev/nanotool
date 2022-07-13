@@ -1,4 +1,4 @@
-all: initial flask adafruit-dht adafruit-blinka adafruit-circuitpython-dht opencv-python picamera2 charpi bmp280 nanotoolAPI flaskEnvironment autoremove
+all: initial flask adafruit-dht adafruit-blinka adafruit-circuitpython-dht opencv-python picamera2 charpi bmp280 adafruit-circuitpython-ads1x15 nanotoolAPI flaskEnvironment autoremove
 
 initial:
 	sudo apt-get update
@@ -10,7 +10,7 @@ initial:
 adafruit-dht:
 	sudo pip3 install $@ --install-option="--force-pi"
 
-flask adafruit-blinka adafruit-circuitpython-dht opencv-python:
+flask adafruit-blinka adafruit-circuitpython-dht opencv-python sudo adafruit-circuitpython-ads1x15:
 	sudo pip3 install $@
 
 bmp280:
