@@ -18,7 +18,7 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
 ###### Cititi mai multe informatii despre software si API [aici](/software/info.md).
 
 ###  iOS & Mac Catalyst App
-<img align="left" src="/repoAssets/nanotoolApp.png" width="50" alt="Nanotool logo"> Stația meteo Nanotool dispune de o aplicație care foloseste API-ul pentru a comunica cu aceasta.<br/>Aplicatia afișează date live ale vremii, cât și un istoric pe zile. Acestea sunt dispuse sub formă de grafice.<br/>
+<img align="left" src="/repoAssets/nanotoolApp.png" width="50" alt="Nanotool logo"> Nanotool dispune de o aplicație realizată cu ajutorul SwiftUI. Aceasta foloseste API-ul pentru a comunica cu stația.<br/>Aplicatia afișează date live ale vremii, cât și un istoric pe zile. Acestea sunt dispuse sub formă de grafice.<br/>
 ###### Cititi mai multe informatii despre aplicatie [aici](/app/info.md).
 
 ### Sarcini automatizate (“Automated Tasks”)
@@ -39,6 +39,9 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
    - prin controlul direct al plăcii folosind o tastatură și un display (placa poate fi scoasă din cutie cu ușurință pentru a o conecta la un display)
    - prin SSH
 
+### Materiale reciclate
+Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, electroncasnice uzate, hard disk-uri. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.
+
 ### Display-ul LCD & librăria CharPi
 Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată tot de creatorul stației Nanotool.
 
@@ -47,6 +50,7 @@ Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica c
    - <b>LCD 20x4 HD44780</b> - display de 80 caractere
    - <b>BMP280</b> - senzor de temperatură și presiune
    - <b>ADS1115</b> - convertor Analog la Digital (ADC), folosit la giruetă
-   
+
+
 ## Legal
 iPhone, iPad, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
