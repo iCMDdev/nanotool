@@ -1,7 +1,7 @@
 # <img align="left" src="/repoAssets/nanotool.png" width="100" alt="Nanotool logo"> Nanotool
 A nano-sized weather station based on a Raspberry Pi with an API, iOS & Mac Catalyst app, and sensor-based automations.
 
-# <img align="left" src="/repoAssets/nanotoolAppPosterImage.png" width="800" alt="Nanotool App Banner">
+# <img src="/repoAssets/nanotoolAppPosterImage.png" width="800" alt="Nanotool App Banner">
 
 ## Descriere
 Vremea este deseori instabilă și imprevizibilă. În plus, în multe locații nu se află stații meteo în apropiere, așa că prognoza pentru aceste zone nu este întocmai corectă. Multe acțiuni ale noastre depind de vreme, de la cum ne îmbrăcăm, până la udarea florilor. Cert este că trebuie să fim bine informați despre aceasta. Stația meteo Nanotool rezolvă aceste probleme.<br/>
