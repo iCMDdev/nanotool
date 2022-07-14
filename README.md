@@ -53,6 +53,27 @@ Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica c
    - <b>BMP280</b> - senzor de temperatură și presiune
    - <b>ADS1115</b> - convertor Analog la Digital (ADC), folosit la giruetă
 
-
+## Dependency-uri
+### Software Raspberry Pi
+Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următoarele module non-native Python au fost folosite pentru software:
+   - <b>CharPi</b> (librărie realizată de creatorul Nanotool) - folosit pentru comunicarea cu LCD-ul HD44780 prin I2C
+   - <b>Flask</b> - folosit pentru crearea server-ului web API
+   - <b>waitress</b> - folosit pentru host-ul server-ului web atunci când API-ul trebuie să ruleze cu setările de production (nu de development)
+   - <b>adafruit_DHT</b> - folosit pentru comunicarea cu senzorul DHT11
+   - <b>adafruit_ads1x15</b> - folosit pentru comunicarea cu convertorul analogic la digital (ADS1115)
+   - <b>adafruit_bmp280</b> - folosit pentru comunicarea cu senzorul BMP280
+   - <b>board, busio</b> - dependency-uri pentru comunicarea cu anumiți senzori ce folosesc librăriile Adafruit CircuitPython
+   - <b>OpenCV</b> - folosit pentru analiza imaginilor capturate de cameră
+   - <b>picamera2</b> - folosit pentru comunicarea cu Raspberry Pi Camera Module v2
+   - <b>Rpi.GPIO</b> - folosit pentru controlul pinilor GPIO
+   - <b>gpiozero</b> - folosit pentru a citi temperatura CPU (sau se poate folosi modulul os astfel: os.popen("vcgencmd measure_temp").read())
+   
+### Aplicația iOS & Mac Catalyst
+Aplicația a fost realizată în întregime folosind limbajul Swift.
+Au fost folosite următoarele package-uri <i>native</i> ale iOS SDK:
+   - <b>SwiftUI</b> - folosit pentru UI
+   - <b>WidgetKit</b> - folosit pentru crearea widget-urilor
+   - <b>Intents</b> - folosit pentru configurarea widget-urilor de pe Home Screen.
+   
 ## Legal
 iPhone, iPad, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
