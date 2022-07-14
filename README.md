@@ -65,7 +65,7 @@ Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următ
    - <b>board, busio</b> - dependency-uri pentru comunicarea cu anumiți senzori ce folosesc librăriile Adafruit CircuitPython
    - <b>OpenCV</b> - folosit pentru analiza imaginilor capturate de cameră
    - <b>picamera2</b> - folosit pentru comunicarea cu Raspberry Pi Camera Module v2
-   - <b>Rpi.GPIO</b> - folosit pentru controlul pinilor GPIO
+   - <b>RPi.GPIO</b> - folosit pentru controlul pinilor GPIO
    - <b>gpiozero</b> - folosit pentru a citi temperatura CPU (sau se poate folosi modulul os astfel: os.popen("vcgencmd measure_temp").read())
    
 ### Aplicația iOS & Mac Catalyst
