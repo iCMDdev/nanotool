@@ -1,7 +1,7 @@
 # <img align="left" src="/repoAssets/nanotoolApp.png" width="100" alt="Nanotool logo"> Nanotool iOS & Mac Catalyst App
 Acest folder contine aplicatia Nanotool pentru iPhone, iPad si Mac, sub forma unui proiect Xcode. 
 
-<img  src="/repoAssets/nanotoolAppPosterImage.png" width="800" alt="Nanotool App Banner">
+<img  src="/repoAssets/nanotoolAppPosterImage.png" alt="Nanotool App Banner">
 
 Necesită ultima versiune de Xcode 13 pentru build-ul aplicației și instalarea acesteia pe un dispozitiv. Este posibil ca versiunile mai recente să functioneze în viitor, precum Xcode 14 (codul a fost testat si pe Xcode 14 Beta 1 & 2).
 
