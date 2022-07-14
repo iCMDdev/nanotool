@@ -59,7 +59,7 @@ Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următ
    - <b>CharPi</b> (librărie realizată de creatorul Nanotool) - folosit pentru comunicarea cu LCD-ul HD44780 prin I2C
    - <b>Flask</b> - folosit pentru crearea server-ului web API
    - <b>waitress</b> - folosit pentru host-ul server-ului web atunci când API-ul trebuie să ruleze cu setările de production (nu de development)
-   - <b>adafruit_DHT</b> - folosit pentru comunicarea cu senzorul DHT11
+   - <b>adafruit_dht</b> - folosit pentru comunicarea cu senzorul DHT11
    - <b>adafruit_ads1x15</b> - folosit pentru comunicarea cu convertorul analogic la digital (ADS1115)
    - <b>adafruit_bmp280</b> - folosit pentru comunicarea cu senzorul BMP280
    - <b>board, busio</b> - dependency-uri pentru comunicarea cu anumiți senzori ce folosesc librăriile Adafruit CircuitPython
