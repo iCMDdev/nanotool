@@ -88,7 +88,7 @@ Au fost folosite următoarele framework-uri <i>native</i> ale iOS SDK:
 Imaginile din acest repo nu se supun condiților din licența codului open-source.
 Folosirea imaginilor in orice scop fără aprobarea creatorului acestui repo, cu excepția în care legislația permite acest lucru, este interzisă.
 
-Licența poate fi accesată [aici](/LICENSE.txt).
+Licența poate fi accesată [aici](/LICENSE).
 
 ## Legal
 iPhone, iPad, iPadOS, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
