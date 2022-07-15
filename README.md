@@ -79,7 +79,7 @@ Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următ
    
 ### Aplicația iOS & Mac Catalyst
 Aplicația a fost realizată în întregime folosind limbajul Swift.
-Au fost folosite următoarele package-uri <i>native</i> ale iOS SDK:
+Au fost folosite următoarele framework-uri <i>native</i> ale iOS SDK:
    - <b>SwiftUI</b> - folosit pentru UI
    - <b>WidgetKit</b> - folosit pentru crearea widget-urilor pentru Home Screen și Today View pe dispozitivele iOS.
    - <b>Intents</b> - folosit pentru configurarea widget-urilor de pe Home Screen-ul device-urilor iOS.
