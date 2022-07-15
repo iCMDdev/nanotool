@@ -42,14 +42,16 @@ Pe lângă aceste accesorii controlate de relee, se pot crea altele care să fol
    - <b>DHT11</B> - măsoară umiditatea aerului
    - <b>Raspberry Pi Camera Module v2</b> - folosind OpenCV, detectează prezența norilor pe cer sau venirea nopții
 
+Senzorii custom-made (Anemometru, Giruetă și Pluviometru), cât și camera, trebuie calibrați pentru a oferi rezultate precise. 
+
 ### Internet, Conectivitate & Setări
 <img align="left" src="/repoAssets/nanotoolConnect.png" width="50" alt="Nanotool Connectivity logo"> Stația meteo Nanotool poate fi controlată prin conectarea la aceiași rețea de internet (Wi-Fi / Ethernet) a dispozitivelor. </br> API-ul poate fi folosit pentru controlarea setărilor scriptului Python. Pe lângă API, există și alte modalități prin care setările interne ale sistemului de operare pot fi modificate: 
    - folosind Raspberry Pi Imager la momentul instalării OS-ului
    - prin controlul direct al plăcii folosind o tastatură și un display (placa poate fi scoasă din cutie cu ușurință pentru a o conecta la un display)
    - prin SSH
 
-### Materiale reciclate
-Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, electronice și electroncasnice uzate, hard disk-uri. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.
+### Design-ul Produsului & Sustenabilitate - Materiale reciclate
+Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, ambalaje de alimente, hard disk-uri electronice și electroncasnice uzate. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.</br>Design-ul Nanotool este unul modern, simplist și modular, bazat pe elemente transparente ce expun componentele mecanice ale senzorilor custom-made și electronice ale unității centrale. Chiar dacă este în mare parte realizat cu materiale reciclate, Nanotool se ridică la standardele industriale, dovedind o rigiditate sporită și rezistență la factorii de mediu, având și o eficiență sporită din punct de vedere termic.
 
 ### Display-ul LCD & librăria CharPi
 Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată tot de creatorul stației Nanotool.
