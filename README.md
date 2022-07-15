@@ -84,7 +84,7 @@ Au fost folosite următoarele package-uri <i>native</i> ale iOS SDK:
    - <b>WidgetKit</b> - folosit pentru crearea widget-urilor pentru Home Screen și Today View pe dispozitivele iOS.
    - <b>Intents</b> - folosit pentru configurarea widget-urilor de pe Home Screen-ul device-urilor iOS.
 
-## Licență
+## License
 Imaginile din acest repo nu se supun condiților din licența codului open-source.
 Folosirea imaginilor in orice scop fără aprobarea creatorului acestui repo, cu excepția în care legislația permite acest lucru, este interzisă.
 
