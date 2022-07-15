@@ -51,7 +51,9 @@ Senzorii custom-made (Anemometru, Giruetă și Pluviometru), cât și camera, tr
    - prin SSH
 
 ### Design-ul Produsului & Sustenabilitate - Materiale reciclate
-Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, ambalaje de alimente, hard disk-uri electronice și electroncasnice uzate. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.</br>Design-ul Nanotool este unul modern, simplist și modular, bazat pe elemente transparente ce expun componentele mecanice ale senzorilor custom-made și electronice ale unității centrale. Chiar dacă este în mare parte realizat cu materiale reciclate, Nanotool se ridică la standardele industriale, dovedind o rigiditate sporită și rezistență la factorii de mediu, având și o eficiență sporită din punct de vedere termic.
+Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, ambalaje de alimente, hard disk-uri electronice și electroncasnice uzate. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.
+
+Design-ul Nanotool este unul modern, simplist și modular, bazat pe elemente transparente ce expun componentele mecanice ale senzorilor custom-made și electronice ale unității centrale. Chiar dacă este în mare parte realizat cu materiale reciclate, Nanotool se ridică la standardele industriale, dovedind o rigiditate sporită și rezistență la factorii de mediu, având și o eficiență sporită din punct de vedere termic.
 
 ### Display-ul LCD & Librăria CharPi
 Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată tot de creatorul stației Nanotool.
