@@ -63,7 +63,7 @@ Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica c
    - <b>ADS1115</b> - convertor Analog la Digital (ADC), folosit la giruetă
 
 ## Dependency-uri
-### Software Raspberry Pi
+### Software pentru Raspberry Pi
 Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următoarele module non-native Python au fost folosite pentru software:
    - <b>CharPi</b> (librărie realizată de creatorul Nanotool) - folosit pentru comunicarea cu LCD-ul HD44780 prin I2C
    - <b>Flask</b> - folosit pentru crearea server-ului web API
