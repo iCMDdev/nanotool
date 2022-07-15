@@ -24,7 +24,14 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
 ###### Cititi mai multe informatii despre aplicatie [aici](/app/info.md).
 
 ### Sarcini automatizate (“Automated Tasks”)
-<img align="left" src="/repoAssets/nanotoolAuto.png" width="50" alt="Nanotool Automated Tasks logo"> Sarcinile automatizate oferă un răspuns instant la acțiunile vremii. Când o anumită condiție este respectată pentru un anumit timp (valoarea înregistrată de un senzor atinge o anumită valoare), atunci poate fi pornit / oprit unul dintre cele 4 relee. Sarcinile pot fi configurate cu usurinta prin API si aplicatie.
+<img align="left" src="/repoAssets/nanotoolAuto.png" width="50" alt="Nanotool Automated Tasks logo"> Sarcinile automatizate oferă un răspuns instant la acțiunea vremii. Când o anumită condiție este respectată pentru un anumit timp (valoarea înregistrată de un senzor atinge un anumit prag), atunci poate fi pornit / oprit unul dintre cele 4 relee controlate de Nanotool. Automatizările pot fi configurate cu ușurință prin API și aplicație. Astfel, Nanotool ușurează și facilitează automatizarea unor acțiuni precum udatul florilor, închiderea jaluzelelor, pornirea luminilor, sau pornirea unui sistem de încălzire / răcire.
+
+Folosind aceste relee, se pot creea 2 tipuri de accesorii:
+   - <b>Simple</b> - releele acționează pe post de întrerupător într-un circuit electric simplu
+   - <b>Inteligente</b> - releele acționează pe post de întrerupător conectat la un microcontroller (de exemplu: Raspberry Pi Pico, Arduino, ESP, ATTINY85). în general, aceste accesorii pot realiza de acțiuni mai complexe.
+   
+Pentru automatizări au fost alese relee în loc de tranzistori, deoarece conferă un plus de siguranță prin separarea circuitelor.
+Pe lângă aceste accesorii controlate de relee, se pot crea altele care să folosească API-ul pentru a verifica singure datele înregistrate de senzori.
 
 ###  Senzori
 <img align="left" src="/repoAssets/nanotoolSensors.png" width="50" alt="Nanotool logo">Stația include mulți senzori ce permit monitorizarea vremii. Datele acestora sunt înregistrate zilnic într-un spreadsheet .csv, ce poate fi accesat prin API sub formă de JSON / descărcat.<br/></br>Senzorii folosiți sunt:
