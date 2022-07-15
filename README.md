@@ -80,7 +80,7 @@ Aplicația a fost realizată în întregime folosind limbajul Swift.
 Au fost folosite următoarele package-uri <i>native</i> ale iOS SDK:
    - <b>SwiftUI</b> - folosit pentru UI
    - <b>WidgetKit</b> - folosit pentru crearea widget-urilor
-   - <b>Intents</b> - folosit pentru configurarea widget-urilor de pe Home Screen (Home Screen-ul iOS).
+   - <b>Intents</b> - folosit pentru configurarea widget-urilor de pe Home Screen-ul device-urilor iOS.
    
 ## Legal
 iPhone, iPad, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
