@@ -17,11 +17,11 @@ Uneori este necesar un răspuns instant la acțiunea vremii, însă cand suntem 
 Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullseye, 64-bit). La boot, aceasta rulează un script Python ce salvează zilnic datele înregistrate de senzori. Acesta conține și server-ul web API, care este folosit de aplicație pentru comunicarea cu stația meteo.
 
 ###  Built-in API
-<img align="left" src="/repoAssets/nanotoolAPI.png" width="50" alt="Nanotool logo"> Nanotool are un API built-in scris cu ajutorul Flask (Python).<br/>Acesta usureaza comunicarea cu statia meteo, dar si crearea unor accesorii ce folosesc acest API. API-ul trimite raspunsuri JSON la request-uri de tip GET / POST, sau fișiere CSV atunci când datele înregistrate de senzori din zilele precedente sunt descărcate.</br>
+<img align="left" src="/repoAssets/nanotoolAPI.png" width="50" alt="Nanotool logo"> Nanotool are un API built-in scris cu ajutorul Flask (Python)<br/>Acesta ușurează comunicarea cu stația meteo, dar și crearea unor accesorii ce folosesc acest API. API-ul trimite răspunsuri JSON la request-uri de tip GET / POST, sau fișiere CSV atunci când datele înregistrate de senzori din zilele precedente sunt descărcate.</br>
 ###### Cititi mai multe informatii despre software si API [aici](/software/info.md).
 
 ###  iOS & Mac Catalyst App
-<img align="left" src="/repoAssets/nanotoolApp.png" width="50" alt="Nanotool logo"> Nanotool dispune de o aplicație realizată cu ajutorul SwiftUI. Aceasta foloseste API-ul pentru a comunica cu stația.<br/>Aplicatia afișează date live ale vremii, cât și un istoric pe zile. Acestea sunt dispuse sub formă de grafice.<br/>
+<img align="left" src="/repoAssets/nanotoolApp.png" width="50" alt="Nanotool logo"> Nanotool dispune de o aplicație realizată cu ajutorul SwiftUI. Aceasta foloseste API-ul pentru a comunica cu stația.<br/>Aplicația afișează date live ale vremii, cât și un istoric pe zile. Acestea sunt dispuse sub formă de grafice.
 ###### Cititi mai multe informatii despre aplicatie [aici](/app/info.md).
 
 ### Sarcini automatizate (“Automated Tasks”)
