@@ -6,11 +6,11 @@ A nano-sized weather station based on a Raspberry Pi with an API, iOS & Mac Cata
 ## Descriere
 Vremea este deseori instabilă și imprevizibilă. În plus, în multe locații nu se află stații meteo în apropiere, așa că prognoza pentru aceste zone nu este întocmai corectă. Multe acțiuni ale noastre depind de vreme, de la cum ne îmbrăcăm, până la udarea florilor. Cert este că trebuie să fim bine informați despre aceasta. Stația meteo Nanotool rezolvă aceste probleme.<br/>
 
-Nanotool este o stație meteo ce are la bază un Raspberry Pi 4B. Aceasta are conectați mai mulți senzori ce monitorizează condițiile atmosferice, și dispune de un API ce facilitează comunicarea cu aceasta. Controlul stației este ușurat de aplicația pentru iPhone, iPad și Mac.
+Nanotool este o stație meteo ce are la bază un Raspberry Pi 4B. Aceasta are conectați mai mulți senzori ce monitorizează condițiile atmosferice, și dispune de un API ce facilitează comunicarea cu aceasta. Controlul stației este ușurat de aplicația pentru iPhone, iPad și Mac.<br/>
 
-Pentru a o înțelege cât mai bine, vremea trebuie monitorizată. Stația monitorizează zilnic vremea (mai precis, viteza si directia vantului, cantitatea de ploaie, temperatura, presiunea și umiditatea aerului) și înregistrează datele. Acestea pot fi vizualizate sub formă de grafic în orice moment, folosind aplicația stației.<br/>
+Pentru a o înțelege cât mai bine, vremea trebuie monitorizată. Stația monitorizează zilnic vremea (mai precis, viteza și direcția vântului, cantitatea de ploaie, temperatura, presiunea și umiditatea aerului) și înregistrează datele. Acestea pot fi vizualizate sub formă de grafic în orice moment, folosind aplicația stației.<br/>
 
-Uneori este necesar un răspuns instant la acțiunea vremii, însă cand suntem la distantă de casă, nu putem face nimic, cum ar fi pornitul / opritul unui furtun cu apă ce udă plantele, sau controlul jaluzelelor. Nanotool poate controla dispozitive externe automat, cu ajutorul a 4 relee și al API-ului ce ușurează configurarea acestor automatizări.<br/>
+Uneori este necesar un răspuns instant la acțiunea vremii, însă cand suntem la distantă de casă, nu putem realiza acțiuni precum pornitul / opritul unui furtun cu apă ce udă plantele, sau controlul jaluzelelor. Nanotool poate controla dispozitive externe automat, cu ajutorul a 4 relee și al API-ului ce ușurează configurarea acestor automatizări.<br/>
 
 ## Tehnologii
 Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullseye, 64-bit). La boot, aceasta rulează un script Python ce salvează zilnic datele înregistrate de senzori. Acesta conține și server-ul web API, care este folosit de aplicație pentru comunicarea cu stația meteo.
