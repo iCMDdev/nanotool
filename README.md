@@ -42,7 +42,7 @@ Pe lângă aceste accesorii controlate de relee, se pot crea altele care să fol
    - <b>DHT11</B> - măsoară umiditatea aerului
    - <b>Raspberry Pi Camera Module v2</b> - folosind OpenCV, detectează prezența norilor pe cer sau venirea nopții
 
-Senzorii custom-made (Anemometru, Giruetă și Pluviometru), cât și camera, trebuie calibrați pentru a oferi rezultate precise. 
+Senzorii custom-made (Anemometru, Giruetă și Pluviometru), cât și camera, trebuie calibrate pentru a oferi rezultate precise. 
 
 ### Internet, Conectivitate & Setări
 <img align="left" src="/repoAssets/nanotoolConnect.png" width="50" alt="Nanotool Connectivity logo"> Stația meteo Nanotool poate fi controlată prin conectarea la aceiași rețea de internet (Wi-Fi / Ethernet) a dispozitivelor. </br> API-ul poate fi folosit pentru controlarea setărilor scriptului Python. Pe lângă API, există și alte modalități prin care setările interne ale sistemului de operare pot fi modificate: 
