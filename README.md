@@ -82,7 +82,7 @@ Aplicația a fost realizată în întregime folosind limbajul Swift.
 Au fost folosite următoarele framework-uri <i>native</i> ale iOS SDK:
    - <b>SwiftUI</b> - folosit pentru UI
    - <b>WidgetKit</b> - folosit pentru crearea widget-urilor pentru Home Screen și Today View pe dispozitivele iOS.
-   - <b>Intents</b> - folosit pentru configurarea widget-urilor de pe Home Screen-ul device-urilor iOS.
+   - <b>Intents & IntentsUI</b> - folosit pentru configurarea widget-urilor de pe Home Screen-ul device-urilor iOS.
 
 ## License
 Imaginile din acest repo nu se supun condiților din licența codului open-source.
