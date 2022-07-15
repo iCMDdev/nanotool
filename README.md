@@ -81,6 +81,10 @@ Au fost folosite următoarele package-uri <i>native</i> ale iOS SDK:
    - <b>SwiftUI</b> - folosit pentru UI
    - <b>WidgetKit</b> - folosit pentru crearea widget-urilor pentru Home Screen și Today View pe dispozitivele iOS.
    - <b>Intents</b> - folosit pentru configurarea widget-urilor de pe Home Screen-ul device-urilor iOS.
-   
+
+## License notice
+Imaginile din acest repo nu se supun condiților din licența codului open-source.
+Folosirea imaginilor in orice scop fără aprobarea creatorului acestui repo, cu excepția în care legislația permite acest lucru, este interzisă.
+
 ## Legal
 iPhone, iPad, iPadOS, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
