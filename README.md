@@ -58,7 +58,7 @@ Stația este realizată cu materiale reciclate, provenite din obiecte precum bec
 Design-ul Nanotool este unul modern, simplist și modular, bazat pe elemente transparente ce expun componentele mecanice ale senzorilor custom-made, și cele electronice ale unității centrale. Chiar dacă este în mare parte realizat cu materiale reciclate, Nanotool se ridică la standardele industriale, dovedind o rigiditate sporită și rezistență la factorii de mediu, având și o eficiență sporită din punct de vedere termic.
 
 ### Display-ul LCD & Librăria CharPi
-Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria CharPi, realizată tot de creatorul stației Nanotool.
+Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria [CharPi](https://www.github.com/iCMDgithub/CharPi), realizată tot de creatorul stației Nanotool.
 
 ### I2C
 Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica cu Raspberry Pi-ul:
@@ -69,7 +69,7 @@ Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica c
 ## Dependency-uri
 ### Software pentru Raspberry Pi
 Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următoarele module non-native Python au fost folosite pentru software:
-   - <b>CharPi</b> (librărie realizată de creatorul Nanotool) - folosit pentru comunicarea cu LCD-ul HD44780 prin I2C
+   - <b>[CharPi](https://www.github.com/iCMDgithub/CharPi)</b> (librărie realizată de creatorul Nanotool) - folosit pentru comunicarea cu LCD-ul HD44780 prin I2C
    - <b>Flask</b> - folosit pentru crearea server-ului web API
    - <b>waitress</b> - folosit pentru host-ul server-ului web atunci când API-ul trebuie să ruleze cu setările de production (nu de development)
    - <b>adafruit_dht</b> - folosit pentru comunicarea cu senzorul DHT11
