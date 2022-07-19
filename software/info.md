@@ -9,6 +9,13 @@ Nanotool rulează la boot un script Python, ce efectuează măsurătorile cu aju
 # Install
 Installer-ul necesita o conexiune activa la internet si privilegii root.
 
+## Varianta 1 - folosind raw.githubusercontent.com
+Rulati următoarea comandă în terminal pentru a instala:
+```
+curl https://raw.githubusercontent.com/iCMDgithub/nanotool/main/software/makefile > makefile; make
+```
+## Varianta 2 - folosind Release Installer
+
 Descarcati installer-ul makefile de la [Releases](https://github.com/iCMDgithub/nanotool/releases) pe Raspberry Pi, apoi navigati spre locatia acestuia in filesystem folosind urmatoarea comanda in terminal:
 ```
 cd Path_Spre_Makefile
@@ -20,6 +27,7 @@ make
 ```
 Nota: pentru a functiona, trebuie sa va asigurati ca nu mai aveti alte fisiere makefile in folder-ul in care se afla installer-ul.
 
+# Reboot Crontab
 Pentru a rula codul de fiecare data cand Nanotool este pornit, puteti folosi crontab. Daca este prima oara cand folositi aceasta comanda, va trebui sa selectati editorul de text dorit.
 ```
 crontab -e
