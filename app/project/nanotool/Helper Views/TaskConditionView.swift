@@ -43,6 +43,7 @@ struct RelayConditionView: View {
                     Text("Wind").tag(3)
                     Text("Sky").tag(4)
                     Text("Pressure").tag(5)
+                    Text("Rainfall").tag(6)
                 }
                 .onChange(of: sensor) { _ in
                     automations.conditions[id].sensor = sensor
