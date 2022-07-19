@@ -536,7 +536,7 @@ def cameraUpdate():
     import time
 
     picam2 = Picamera2()
-    picam2.configure(picam2.preview_configuration(main={"format": 'XRGB8888', "size": (640, 480)}))
+    picam2.configure(picam2.create_preview_configuration(main={"format": 'XRGB8888', "size": (640, 480)}))
     picam2.start()
     time.sleep(0.1)
     
