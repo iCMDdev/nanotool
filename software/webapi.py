@@ -73,6 +73,8 @@ def taskThread():
     global humidity
     global pressure
     global automatedTasks
+    global rainGauge	
+	
     while True:
         for task in automatedTasks:
             if task.sensor == 1:
@@ -280,7 +282,7 @@ def taskThread():
                     elif pressure < task.value and task.currentState == 0:
                         task.stateBeginTime = time.time()
                         task.currentState = 1
-                    elif not (humidity < task.value):
+                    elif not (pressure < task.value):
                         task.currentState = 0
                 elif task.comparison == 2:
                     if pressure <= task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
@@ -288,7 +290,7 @@ def taskThread():
                     elif pressure <= task.value and task.currentState == 0:
                         task.stateBeginTime = time.time()
                         task.currentState = 1
-                    elif not (humidity <= task.value):
+                    elif not (pressure <= task.value):
                         task.currentState = 0
                 elif task.comparison == 3:
                     if pressure == task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
@@ -321,6 +323,55 @@ def taskThread():
                         task.stateBeginTime = time.time()
                         task.currentState = 1
                     elif not (pressure >= task.value):
+                        task.currentState = 0
+            elif task.sensor == 6:
+                if task.comparison == 1:
+                    if rainGauge.value < task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
+                        relays.setRelay(task.relayID, (task.turnOn==1))
+                    elif rainGauge.value < task.value and task.currentState == 0:
+                        task.stateBeginTime = time.time()
+                        task.currentState = 1
+                    elif not (rainGauge.value < task.value):
+                        task.currentState = 0
+                elif task.comparison == 2:
+                    if rainGauge.value <= task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
+                        relays.setRelay(task.relayID, (task.turnOn==1))
+                    elif rainGauge.value <= task.value and task.currentState == 0:
+                        task.stateBeginTime = time.time()
+                        task.currentState = 1
+                    elif not (rainGauge.value <= task.value):
+                        task.currentState = 0
+                elif task.comparison == 3:
+                    if rainGauge.value == task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
+                        relays.setRelay(task.relayID, (task.turnOn==1))
+                    elif rainGauge.value == task.value and task.currentState == 0:
+                        task.stateBeginTime = time.time()
+                        task.currentState = 1
+                    elif not (rainGauge.value == task.value):
+                        task.currentState = 0
+                elif task.comparison == 4:
+                    if rainGauge.value != task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
+                        relays.setRelay(task.relayID, (task.turnOn==1))
+                    elif rainGauge.value != task.value and task.currentState == 0:
+                        task.stateBeginTime = time.time()
+                        task.currentState = 1
+                    elif not (rainGauge.value != task.value):
+                        task.currentState = 0
+                elif task.comparison == 5:
+                    if rainGauge.value > task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
+                        relays.setRelay(task.relayID, (task.turnOn==1))
+                    elif rainGauge.value > task.value and task.currentState == 0:
+                        task.stateBeginTime = time.time()
+                        task.currentState = 1
+                    elif not (rainGauge.value > task.value):
+                        task.currentState = 0
+                elif task.comparison == 6:
+                    if rainGauge.value >= task.value and task.currentState == 1 and (time.time()-task.stateBeginTime)/60 >= task.minutes:
+                        relays.setRelay(task.relayID, (task.turnOn==1))
+                    elif rainGauge.value >= task.value and task.currentState == 0:
+                        task.stateBeginTime = time.time()
+                        task.currentState = 1
+                    elif not (rainGauge.value >= task.value):
                         task.currentState = 0
         time.sleep(1)
             
