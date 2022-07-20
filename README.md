@@ -30,7 +30,9 @@ Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullse
 
 Folosind aceste relee, se pot creea 2 tipuri de accesorii:
    - <b>Simple</b> - releele acționează pe post de întrerupător într-un circuit electric simplu
+      <img align="left" src="/repoAssets/simpleAccessory.png" width="50" alt="Simple accessory example">
    - <b>Inteligente</b> - releele acționează pe post de întrerupător conectat la un microcontroller (de exemplu: Raspberry Pi Pico, Arduino, ESP, ATTINY85). în general, aceste accesorii pot realiza de acțiuni mai complexe.
+      <img align="left" src="/repoAssets/smartAccessory.png" width="50" alt="Smart accessory example"> 
    
 Pentru automatizări au fost alese relee în loc de tranzistori, deoarece conferă un plus de siguranță prin separarea circuitelor.
 Pe lângă aceste accesorii controlate de relee, se pot crea altele care să folosească API-ul pentru a verifica singure datele înregistrate de senzori.
