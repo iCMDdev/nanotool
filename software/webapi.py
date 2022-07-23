@@ -396,22 +396,22 @@ def windDirection():
     # aceasta functie afla directia vantului de la girueta
         
     # Equivalent resistor values for each position
-    Nminvalue = 123
-    Nmaxvalue = 456
-    NEminvalue = 789
-    NEmaxvalue = 1011
-    Eminvalue = 1213
-    Emaxvalue = 1314
-    SEminvalue = 1415
-    SEmaxvalue = 1516
-    Sminvalue = 1617
-    Smaxvalue = 1718
-    SWminvalue = 1819
-    SWmaxvalue = 2020
-    Wminvalue = 2121
-    Wmaxvalue = 2222
-    NWminvalue = 2323
-    NWmaxvalue = 2424
+    Nminvalue = 15632
+    Nmaxvalue = 15713
+    NEminvalue = 12122
+    NEmaxvalue = 13232
+    Eminvalue = 8704
+    Emaxvalue = 8752
+    SEminvalue = 23950
+    SEmaxvalue = 24065
+    Sminvalue = 21550
+    Smaxvalue =  21585
+    SWminvalue = 19807
+    SWmaxvalue = 19825
+    Wminvalue = 17950
+    Wmaxvalue = 18016
+    NWminvalue = 17471
+    NWmaxvalue = 17505
     try:
         import board
         import busio
@@ -421,7 +421,7 @@ def windDirection():
         i2c = busio.I2C(board.SCL, board.SDA)
         ads = ADS.ADS1015(i2c, address=0x48)
         chan = AnalogIn(ads, ADS.P0)
-
+        #print(chan.value, chan.voltage, "V - ADS") - un-comment for debug
         if chan.value >= Nminvalue and chan.value <= Nmaxvalue:
             return 1 # N
         if chan.value >= NEminvalue and chan.value <= NEmaxvalue:
@@ -442,6 +442,35 @@ def windDirection():
         pass
     return 0 # unknown, please calibrate / check wiring!
 
+def windDirectionThread():
+          while True:
+                    global wind
+                    windDirValue = windDirection()
+                    if windDirValue == 1 and wind.direction != "N":
+                        wind.direction = "N"
+                        lcdRefresh.updateLCD = True
+                    elif windDirValue == 2 and wind.direction != "NE":
+                        wind.direction = "NE"
+                        lcdRefresh.updateLCD = True
+                    elif windDirValue == 3 and wind.direction != "E":
+                        wind.direction = "E"
+                        lcdRefresh.updateLCD = True
+                    elif windDirValue == 4 and wind.direction != "SE":
+                        wind.direction = "SE"
+                        lcdRefresh.updateLCD = True
+                    elif windDirValue == 5 and wind.direction != "S":
+                        wind.direction = "S"
+                        lcdRefresh.updateLCD = True
+                    elif windDirValue == 6 and wind.direction != "SW":
+                        wind.direction = "SW"
+                        lcdRefresh.updateLCD = True
+                    elif windDirValue == 7 and wind.direction != "W":
+                        wind.direction = "W"
+                        lcdRefresh.updateLCD = True
+                    elif windDirValue == 8 and wind.direction != "NW":
+                        wind.direction = "NW"
+                        lcdRefresh.updateLCD = True
+                    time.sleep(captureInterval)
 
 def windRead():
     global wind
@@ -456,30 +485,9 @@ def windRead():
                 
                 wind.state = True
                 wind.currentRotation = time.time()
-                
                 wspeed = round(2*3.1415/(wind.currentRotation-wind.lastRotation)*wind.radius*3.6, 2)
                 if (wspeed - wind.speed >= 1) or (wspeed - wind.speed <= -1):
                     wind.speed = wspeed
-                    # Update wind direction
-                    windDirValue = windDirection()
-                    if windDirValue == 1:
-                        wind.direction = "N"
-                    elif windDirValue == 2:
-                        wind.direction = "NE"
-                    elif windDirValue == 3:
-                        wind.direction = "E"
-                    elif windDirValue == 4:
-                        wind.direction = "SE"
-                    elif windDirValue == 5:
-                        wind.direction = "S"
-                    elif windDirValue == 6:
-                        wind.direction = "SW"
-                    elif windDirValue == 7:
-                        wind.direction = "W"
-                    elif windDirValue == 8:
-                        wind.direction = "NW"
-                    else:
-                        wind.direction = "-"
                     lcdRefresh.updateLCD = True
                 wind.speedSum =  wind.speedSum + wspeed
                 wind.speedCount = wind.speedCount + 1
@@ -931,6 +939,7 @@ def info():
 threading.Thread(target=LCDupdate).start()
 threading.Thread(target=DHT11loadData).start()
 threading.Thread(target=windRead).start()
+threading.Thread(target=windDirectionThread).start()
 threading.Thread(target=rainGaugeRead).start()
 threading.Thread(target=cameraUpdate).start()
 threading.Thread(target=storeData).start()
