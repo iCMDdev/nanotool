@@ -801,7 +801,6 @@ def removeTasksAPI():
 def setTaskAPI():
     task = AutomatedTask(request.form['id'], request.form['sensor'], request.form['comparison'], request.form['turnOn'], request.form['minutes'], request.form['value'], request.form['relayID']) 
     automatedTasks.append(task)
-    print(task.value)
     return f'{{"status": 200}}'
 
 @app.route('/sensors',methods=['GET'])
