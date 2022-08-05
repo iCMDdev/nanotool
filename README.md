@@ -5,12 +5,12 @@ A nano-sized weather station based on a Raspberry Pi with an API, iOS & Mac Cata
 # <img src="/repoAssets/nanotoolAppPosterImage.png" alt="Nanotool App Banner">
 # <img src="/nanotoolCircuitDiagram.png" alt="Nanotool Circuit Diagram">
 
-## Descriere
-<img align="left" src="/repoAssets/nanotoolCentralUnitCloseUp.png" width="300" alt="Nanotool logo"> Vremea este deseori instabilă și imprevizibilă. În plus, în multe locații nu se află stații meteo în apropiere, așa că prognoza pentru aceste zone nu este întocmai corectă. Multe acțiuni ale noastre depind de vreme, de la cum ne îmbrăcăm, până la udarea florilor. Cert este că trebuie să fim bine informați despre aceasta. Stația meteo Nanotool rezolvă aceste probleme.<br/>
+## Description
+<img align="left" src="/repoAssets/nanotoolCentralUnitCloseUp.png" width="300" alt="Nanotool logo"> Weather is sometimes unpredictable. In addition, in many locations, there aren't weather stations nearby, so the forecast isn't actually accurate. Many of our actions depend on weather, from how we dress, to watering our flowers. What's sure is that we need to be informed about it. The Nanotool weather station solves these problems.<br/>
 
-Nanotool este o stație meteo ce are la bază un Raspberry Pi 4B. Aceasta are conectați mai mulți senzori ce monitorizează condițiile atmosferice, și dispune de un API ce facilitează comunicarea cu aceasta. Controlul stației este ușurat de aplicația pentru iPhone, iPad și Mac.<br/>
+Nanotool is a weather station based on a Raspberry Pi 4B. It uses many sensors to monitor the atmospheric conditions, and has an API that makes communication straightforward. By using the iPhone, iPad and Mac app, controlling the weather station is as easy and simple as possible.<br/>
 
-Pentru a o înțelege cât mai bine, vremea trebuie monitorizată. Stația monitorizează zilnic vremea (mai precis, viteza și direcția vântului, cantitatea de ploaie, temperatura, presiunea și umiditatea aerului) și înregistrează datele. Acestea pot fi vizualizate sub formă de grafic în orice moment, folosind aplicația stației.<br/>
+To understand it better in today's world, weather needs to be monitored. The station monitors weather daily (to be more precise, wind speed and direction, rainfall, temperature, air pressure and air humidity) and records the data. Acestea pot fi vizualizate sub formă de grafic în orice moment, folosind aplicația stației.<br/>
 
 Uneori este necesar un răspuns instant la acțiunea vremii, însă cand suntem la distantă de casă, nu putem realiza acțiuni precum pornitul / opritul unui furtun cu apă ce udă plantele, sau controlul jaluzelelor. Nanotool poate controla dispozitive externe automat, cu ajutorul a 4 relee și al API-ului ce ușurează configurarea acestor automatizări.<br/>
 
@@ -83,7 +83,7 @@ Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următ
    - <b>RPi.GPIO</b> - folosit pentru controlul pinilor GPIO
    - <b>gpiozero</b> - folosit pentru a citi temperatura CPU (sau se poate folosi modulul os astfel: os.popen("vcgencmd measure_temp").read())
    
-### Aplicația iOS & Mac Catalyst
+### iOS & Mac Catalyst App
 Aplicația a fost realizată în întregime folosind limbajul Swift.
 Au fost folosite următoarele framework-uri <i>native</i> ale iOS SDK:
    - <b>SwiftUI</b> - folosit pentru UI
@@ -94,7 +94,7 @@ Au fost folosite următoarele framework-uri <i>native</i> ale iOS SDK:
 Imaginile din acest repo nu se supun condiților din licența codului open-source.
 Folosirea imaginilor in orice scop fără aprobarea creatorului acestui repo, cu excepția în care legislația permite acest lucru, este interzisă.
 
-Licența poate fi accesată [aici](/LICENSE).
+The license can be accessed [here](/LICENSE).
 
 ## Legal
-iPhone, iPad, iPadOS, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
+iPhone, iPad, iPadOS, Mac and Mac Catalyst are trademarks of Apple Inc., registered in USA and other countries and regions.<br/> IOS is a trademark or a registered trademark of Cisco, in USA and other countries.<br/>Raspberry Pi is a trademark of Raspberry Pi Ltd.
