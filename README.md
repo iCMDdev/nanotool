@@ -14,7 +14,7 @@ To understand it better in today's world, weather needs to be monitored. The sta
 
 Sometimes, an instant response to weather's actions is necessary. However, when people are not home, they cannot do things such as turning on a garden hose, or controlling some mechanically-driven curtains. Nanotool can automatically control many external devices by using the 4 relays and the API, which makes configuring these automations easier.<br/>
 
-## Tehnologii
+## Tehnologies
 Nanotool uses a Raspberry Pi 4B (4GB RAM) with Raspberry Pi OS Lite (Bullseye, 64-bit). After booting, it runs a Python script that saves the data recorded by the sensors daily. This script also contains the web API, used by the app to communicate with the weather station.
 
 ###  Built-in API
