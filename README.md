@@ -91,8 +91,7 @@ The following <i>native</i> iOS SDK frameworks were used:
    - <b>Intents & IntentsUI</b> - used for managing the widgets' settings from the iOS Home Screen
 
 ## License
-The assets (images) in this repo are not subject to the code open-source license.
-Usage of these assets in any way, without the creator's consent is prohibited, unless the law permits it.
+The assets (images) provided in this repo and Xcode project are not subject to the code open-source license. Usage of these assets in any way, without the creator's consent is prohibited, unless the law permits it.
 
 The license can be accessed [here](/LICENSE).
 
