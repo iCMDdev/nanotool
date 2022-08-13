@@ -1,6 +1,8 @@
 # <img align="left" src="/repoAssets/nanotool.png" width="100" alt="Nanotool logo"> Nanotool
 A nano-sized weather station based on a Raspberry Pi with an API, iOS & Mac Catalyst app, and sensor-based automations.
 
+Check out the english-description branch for an English description. The following description was written in Romanian for a national olympiad.
+
 # <img src="/repoAssets/nanotoolAll.png" alt="Nanotool App Banner">
 # <img src="/repoAssets/nanotoolAppPosterImage.png" alt="Nanotool App Banner">
 # <img src="/nanotoolCircuitDiagram.png" alt="Nanotool Circuit Diagram">
