@@ -1,17 +1,17 @@
 # <img align="left" src="/repoAssets/nanotoolApp.png" width="100" alt="Nanotool logo"> Nanotool iOS & Mac Catalyst App
-Acest folder contine aplicatia Nanotool pentru iPhone, iPad si Mac, sub forma unui proiect Xcode. 
+This directory contains the Nanotool App for iPhone, iPad and Mac, as an Xcode project. 
 
 <img  src="/repoAssets/nanotoolAppPosterImage.png" alt="Nanotool App Banner">
 
-<img align="left" src="/repoAssets/widgetTemp.png" width="300" alt="Nanotool logo"> Aplicația este realizată în întregime in Swift. Aceasta foloseste SwiftUI și este compusă din mai multe View-uri (pentru senzori, relee, setări și automatizări), precum și modele (pentru date, grafice si automatizări). Totodată, am creat widget-uri (.systemMedium și .systemLarge) cu datele înregistrate de un anumit senzor în ziua respectivă dispuse sub formă de grafic, folosind WidgetKit și Intents.
+<img align="left" src="/repoAssets/widgetTemp.png" width="300" alt="Nanotool logo"> The app is entirely made using Swift. It uses SwiftUI, and it's composed out of multiple Views (for sensors, relays, setiings and automations), as well as models (for data, charts and automations). Furthermore, widgets (.systemMedium and .systemLarge) are available. They display a sensor value's variation during the day as a chart. These widgets were created using WidgetKit and Intents.
 
-Aplicația respectă regulile de thread concurrency ce vor fi aplicate începând cu Swift 6. Comunicarea cu API-ul se face prin functii asincronizate async / await, find astfel foarte responsive si neavând delay-uri.
+The app respects the thread concurrency rules that will be applied starting with Swift 6. The communication with the API is made through asynchronous functions (with async / await), thus being very responsive and not having delays.
 
 # Requirements
-Aplicația necesită iOS 15.0 sau o versiune mai recentă, respectiv macOS 12 Monterey sau o versiune mai recentă. Totodată, este necesară ultima versiune de Xcode 13 pentru build-ul aplicației și instalarea acesteia pe un dispozitiv.
+The app requires iOS 15.0 or a newer version on iPhone, respectively macOS 12 Monterey or a newer version on Mac. Furthermore, the latest Xcode 13 version is necessary to build & install the app on a device.
 
-Pentru instalarea aplicației pe un dispozitiv, codul trebuie semnat folosind Xcode / codesign. Astfel, trebuie selectat un development team în Signing & Capabilities editor. Este necesar un cont de Apple Developer (nu neapărat participant Apple Developer Program).
+To install the app on a device, the code must be signed using Xcode / codesign (Xcode command line tool). Therefore, a development team must be selected in Signing & Capabilities editor. An Apple Developer Account (not necessarily with Apple Developer Program) is requred.
 
 # Legal
-iPhone, iPad, Mac, Mac Catalyst și Xcode sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.
-IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco în S.U.A. și în alte țări.
+iPhone, iPad, Mac, macOS, Mac Catalyst și Xcode are trademarks of Apple Inc., registered in the US and other countries and regions.
+IOS is a trademark or a registered trademark of  Cisco in the US and other countries.

@@ -1,50 +1,47 @@
 # Nanotool Raspberry Pi Software
 
-Acest folder contine codul sursa al statiei meteo, scris pentru Raspberry Pi.
-De asemenea, acest folder contine si un makefile ce poate fi folosit pentru a instala acest software cu usurinta pe hardware, precum si dependency-urile acestuia.
+This folder contains the weather station's source code, written for Raspberry Pi.
+Moreover, this folder also contains a makefile that can be used to easily install this software on hardware, as well as the software's dependencies.
 
 # Description
-Nanotool rulează la boot un script Python, ce efectuează măsurătorile cu ajutorul senzorilor și pornește server-ul web API, realizat cu ajutorul Flask. Acesta conține mai multe thread-uri dedicate fiecărui senzor și activitate (precum salvarea datelor la un interval de timp). 
+Nanotool runs a Python script after booting. This script monitors the weather using the sensors and runs the API web server (made with Flask).
+The Python script contains threads for each sensor and activity (such as saving data at the specified time interval) 
 
 # Install
-Installer-ul necesita o conexiune activa la internet si privilegii root.
+The installer needs an active internet connection and root privileges.
 
-## Varianta 1 - folosind raw.githubusercontent.com
-Rulati următoarea comandă în terminal pentru a instala:
+## Method 1 - using raw.githubusercontent.com
+Run the following command in the terminal to install:
 ```
 curl https://raw.githubusercontent.com/iCMDgithub/nanotool/main/software/makefile > makefile; make
 ```
-## Varianta 2 - folosind Release Installer
+## Method 2 - using Release Installer
 
-Descarcati installer-ul makefile de la [Releases](https://github.com/iCMDgithub/nanotool/releases) pe Raspberry Pi, apoi navigati spre locatia acestuia in filesystem folosind urmatoarea comanda in terminal:
-```
-cd Path_Spre_Makefile
-```
-
-Apoi, folositi comanda make in acel folder:
+Download the [Makefile Installer](https://github.com/iCMDgithub/nanotool/releases) on the Raspberry Pi.
+Then, use the ```make``` command in the folder where you downloaded the installer:
 ```
 make
 ```
-Nota: pentru a functiona, trebuie sa va asigurati ca nu mai aveti alte fisiere makefile in folder-ul in care se afla installer-ul.
+Note: In order for this to work properly, make sure you do not have any other makefiles in the current folder.
 
 # Reboot Crontab
-Pentru a rula codul de fiecare data cand Nanotool este pornit, puteti folosi crontab. Daca este prima oara cand folositi aceasta comanda, va trebui sa selectati editorul de text dorit.
+In order to run the code each time Nanotool is booted, use crontab. If it is the first time you use this command on your system, you will have to choose your preffered text editor.
 ```
 crontab -e
 ```
-La finalul fisierului deschis in urma rulari comenzii de mai sus, adaugati urmatoarea linie de cod pentru rularea la (re)boot:
+At the end of the opened file, add the followin line to run the script at (re)boot:
 ```
 @reboot python3 ~/webapi.py
 ```
 # Run
-Pentru rularea software-ului, folositi comanda
+To run the software, use the following command:
 ```
 python3 ~/webapi.py
 ```
 
-# Securitatea API-ului
-Este recomandata crearea unui user cu privilegii inferioare unui user de tip sudo, care sa aiba doar atribuțiile necesare pentru a rula API-ul.
-API-ul, scris in Flask, rulează cu setările de production (nu de development).
+# API Security
+It is recommended to create an user with limited privileges. This user should only have the privileges required to run the API.
+The API, written in Flask, should run with production settings (not development).
 
 # Legal
-Raspberry Pi este o marcă a Raspberry Pi Ltd.
+Raspberry Pi is a trademark of Raspberry Pi Ltd.
