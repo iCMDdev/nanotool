@@ -1,3 +1,2 @@
 # Assets
-Imaginile din acest repo nu se supun condiților din licența codului open-source.
-Folosirea imaginilor in orice scop fără aprobarea creatorului acestui repo, cu excepția in care legislația permite acest lucru, este interzisă.
+The assets (images) provided in this repo and Xcode project are not subject to the code open-source license. Usage of these assets in any way, without the creator's consent is prohibited, unless the law permits it.

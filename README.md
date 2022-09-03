@@ -7,96 +7,95 @@ Check out the [english-description](https://github.com/iCMDgithub/nanotool/tree/
 # <img src="/repoAssets/nanotoolAppPosterImage.png" alt="Nanotool App Banner">
 # <img src="/nanotoolCircuitDiagram.png" alt="Nanotool Circuit Diagram">
 
-## Descriere
-<img align="left" src="/repoAssets/nanotoolCentralUnitCloseUp.png" width="300" alt="Nanotool logo"> Vremea este deseori instabilă și imprevizibilă. În plus, în multe locații nu se află stații meteo în apropiere, așa că prognoza pentru aceste zone nu este întocmai corectă. Multe acțiuni ale noastre depind de vreme, de la cum ne îmbrăcăm, până la udarea florilor. Cert este că trebuie să fim bine informați despre aceasta. Stația meteo Nanotool rezolvă aceste probleme.<br/>
+## Description
+<img align="left" src="/repoAssets/nanotoolCentralUnitCloseUp.png" width="300" alt="Nanotool logo"> Weather is sometimes unpredictable. In addition, in many locations, there aren't weather stations nearby, so the forecast isn't actually accurate. Many of our actions depend on weather, from how we dress, to watering our flowers. What's sure is that we need to be informed about it. The Nanotool weather station solves these problems.<br/>
 
-Nanotool este o stație meteo ce are la bază un Raspberry Pi 4B. Aceasta are conectați mai mulți senzori ce monitorizează condițiile atmosferice, și dispune de un API ce facilitează comunicarea cu aceasta. Controlul stației este ușurat de aplicația pentru iPhone, iPad și Mac.<br/>
+Nanotool is a weather station based on a Raspberry Pi 4B. It uses many sensors to monitor the atmospheric conditions, and has an API that makes communication straightforward. By using the iPhone, iPad and Mac app, controlling the weather station is as easy and simple as possible.<br/>
 
-Pentru a o înțelege cât mai bine, vremea trebuie monitorizată. Stația monitorizează zilnic vremea (mai precis, viteza și direcția vântului, cantitatea de ploaie, temperatura, presiunea și umiditatea aerului) și înregistrează datele. Acestea pot fi vizualizate sub formă de grafic în orice moment, folosind aplicația stației.<br/>
+To understand it better in today's world, weather needs to be monitored. The station monitors weather daily (to be more precise, wind speed and direction, rainfall, temperature, air pressure and air humidity) and records the data. These data can be visualized as a chart, anytime, just by using the app.<br/>
 
-Uneori este necesar un răspuns instant la acțiunea vremii, însă cand suntem la distantă de casă, nu putem realiza acțiuni precum pornitul / opritul unui furtun cu apă ce udă plantele, sau controlul jaluzelelor. Nanotool poate controla dispozitive externe automat, cu ajutorul a 4 relee și al API-ului ce ușurează configurarea acestor automatizări.<br/>
+Sometimes, an instant response to weather's actions is necessary. However, when people are not home, they cannot do things such as turning on a garden hose, or controlling some mechanically-driven curtains. Nanotool can automatically control many external devices by using the 4 relays and the API, which makes configuring these automations easier.<br/>
 
-## Tehnologii
-Nanotool folosește un Raspberry Pi 4B (4GB RAM) cu Raspberry Pi OS Lite (Bullseye, 64-bit). La boot, aceasta rulează un script Python ce salvează zilnic datele înregistrate de senzori. Acesta conține și server-ul web API, care este folosit de aplicație pentru comunicarea cu stația meteo.
+## Tehnologies
+Nanotool uses a Raspberry Pi 4B (4GB RAM) with Raspberry Pi OS Lite (Bullseye, 64-bit). After booting, it runs a Python script that saves the data recorded by the sensors daily. This script also contains the web API, used by the app to communicate with the weather station.
 
 ###  Built-in API
-<img align="left" src="/repoAssets/nanotoolAPI.png" width="50" alt="Nanotool logo"> Nanotool are un API built-in scris cu ajutorul Flask (Python)<br/>Acesta ușurează comunicarea cu stația meteo, dar și crearea unor accesorii ce folosesc acest API. API-ul trimite răspunsuri JSON la request-uri de tip GET / POST, sau fișiere CSV atunci când datele înregistrate de senzori din zilele precedente sunt descărcate.</br>
-###### Cititi mai multe informatii despre software si API [aici](/software/info.md).
+<img align="left" src="/repoAssets/nanotoolAPI.png" width="50" alt="Nanotool logo"> Nanotool has a built-in API written using Flask (Python module).<br/>It facilitates communication with the station and creating acessories that use this API, such as the app itself. The API sends JSON responses to GET / POST requests, or CSV files when sensor data from previous days is downloaded.</br>
+###### Find out more about software and API [here](/software/info.md).
 
 ###  iOS & Mac Catalyst App
-<img align="left" src="/repoAssets/nanotoolApp.png" width="50" alt="Nanotool logo"> Nanotool dispune de o aplicație realizată cu ajutorul SwiftUI. Aceasta foloseste API-ul pentru a comunica cu stația.<br/>Aplicația afișează date live ale vremii, cât și un istoric pe zile. Acestea sunt dispuse sub formă de grafice.
-###### Cititi mai multe informatii despre aplicatie [aici](/app/info.md).
+<img align="left" src="/repoAssets/nanotoolApp.png" width="50" alt="Nanotool logo"> Nanotool has an application made using SwiftUI, a powerful user interface framework. It uses the API to get data from the weather station, and makes it even easier to control it.<br/>The app shows live data, as well as a data from the past. Both of them can be shown using charts.
+###### Find out more about the app [here](/app/info.md).
 
-### Sarcini automatizate (“Automated Tasks”)
-<img align="left" src="/repoAssets/nanotoolAuto.png" width="50" alt="Nanotool Automated Tasks logo"> Sarcinile automatizate oferă un răspuns instant la acțiunea vremii. Când o anumită condiție este respectată pentru un anumit timp (valoarea înregistrată de un senzor atinge un anumit prag), atunci poate fi pornit / oprit unul dintre cele 4 relee controlate de Nanotool. Automatizările pot fi configurate cu ușurință prin API și aplicație. Astfel, Nanotool ușurează și facilitează automatizarea unor acțiuni precum udatul florilor, închiderea jaluzelelor, pornirea luminilor, sau pornirea unui sistem de încălzire / răcire.
+### Automated Tasks
+<img align="left" src="/repoAssets/nanotoolAuto.png" width="50" alt="Nanotool Automated Tasks logo"> Automated Tasks offer an instant response to weather. When a certain condition is met for a specified amount of time, one of the 4 relays can be toggled by Nanotool. Automations can be managed within the app, or by using the API separately. Nanotool facilitates automating tasks such as watering flowers, moving curtains, turning lights on or off, or turning a heating / cooling system on or off.
 
-Folosind aceste relee, se pot creea 2 tipuri de accesorii:
-   - <b>Simple</b> - releele acționează pe post de întrerupător într-un circuit electric simplu
+With the 4 relays, 2 types of accessories can be created:
+   - <b>Simple acessories</b> - the relays act as a switch in a simple electric circuit
       <img src="/repoAssets/simpleAccessory.png"  alt="Simple accessory example">
-   - <b>Inteligente</b> - releele acționează pe post de întrerupător conectat la un microcontroller (de exemplu: Raspberry Pi Pico, Arduino, ESP, ATTINY85). în general, aceste accesorii pot realiza de acțiuni mai complexe.
+   - <b>Inteligent acessories</b> - the relays act as a switch connected to a microcontroller (for example, a Raspberry Pi Pico, Arduino, ESP or an ATTINY85). In general, these accessories can automate more complex actions.
       <img src="/repoAssets/smartAccessory.png" alt="Smart accessory example"> 
    
-Pentru automatizări au fost alese relee în loc de tranzistori, deoarece conferă un plus de siguranță prin separarea circuitelor.
-Pe lângă aceste accesorii controlate de relee, se pot crea altele care să folosească API-ul pentru a verifica singure datele înregistrate de senzori.
+Relays where chosen ofer transistors, since they offer more safety by separating the circuits.
+Besides these relay-controlled accessories, others that use the API by themselves to check the data can be created.
 
-###  Senzori
-<img align="left" src="/repoAssets/nanotoolSensors.png" width="50" alt="Nanotool logo">Stația include mulți senzori ce permit monitorizarea vremii. Datele acestora sunt înregistrate zilnic într-un spreadsheet .csv, ce poate fi accesat prin API sub formă de JSON / descărcat.<br/></br>Senzorii folosiți sunt:
-   - <b>Anemometru</b> - măsoară viteza vântului folosind un întrerupător magnetic reed. La fiecare rotație, un magnet trece pe deasupra întrerupătorului, iar rotația este înregistrată de Pi.
-   - <b>Giruetă</b> - măsoară direcția vântului 
-   - <b>Pluviometru</b> - măsoară cantitatea de apă provenită de la ploaie (l/m^2 = mm) într-un interval de timp dat. Acesta folosește tot un întrerupător magnetic reed.
-   - <b>BMP280</b> - măsoară temperatura și presiunea barometrică a aerului
-   - <b>DHT11</B> - măsoară umiditatea aerului
-   - <b>Raspberry Pi Camera Module v2</b> - folosind OpenCV, detectează prezența norilor pe cer sau venirea nopții
+###  Sensors
+<img align="left" src="/repoAssets/nanotoolSensors.png" width="50" alt="Nanotool logo">The station includes many sensors that allows weather monitoring. Their data are registered daily in a CSV spreadsheet that can be accessed through the API as a JSON file, or simply downloaded.<br/></br>The used sensors are:
+   - <b>Anemometer</b> - measures wind speed using a reed magnetic switch. At every rotation, a magnet travels above the switch, and toggles it, so that the rotation is registered by the Raspberry Pi.
+   - <b>Wind direction sensor</b>
+   - <b>Self-tipping Rain Gauge</b> - measures rainfall (liters / sq meter = mm) in a given time interval. This also uses a magnetic switch.
+   - <b>BMP280</b> - measures temperature and barometric pressure
+   - <b>DHT11</B> - measures air humidity
+   - <b>Raspberry Pi Camera Module v2</b> - using OpenCV, the camera detects the presence of clouds, or absence of light (night)
 
-Senzorii custom-made (Anemometru, Giruetă și Pluviometru), cât și camera, trebuie calibrate pentru a oferi rezultate precise. 
+The custom-made sensors (Anemometer, Wind Direction sensor and Rain Gauge), as well as the camera, need to be calibrated in order to give precise measurements.
 
-### Internet, Conectivitate & Setări
-<img align="left" src="/repoAssets/nanotoolConnect.png" width="50" alt="Nanotool Connectivity logo"> Stația meteo Nanotool poate fi controlată prin conectarea la aceiași rețea de internet (Wi-Fi / Ethernet) a dispozitivelor. </br> API-ul poate fi folosit pentru controlarea setărilor scriptului Python. Pe lângă API, există și alte modalități prin care setările interne ale sistemului de operare pot fi modificate: 
-   - folosind Raspberry Pi Imager la momentul instalării OS-ului
-   - prin controlul direct al plăcii folosind o tastatură și un display (placa poate fi scoasă din cutie cu ușurință pentru a o conecta la un display)
-   - prin SSH
+### Internet, Connectivity & Settings
+<img align="left" src="/repoAssets/nanotoolConnect.png" width="50" alt="Nanotool Connectivity logo"> The Nanotool weather station can be controlled by connecting it to the same internet network (through WiFi / Ethernet) as the controlling devices.</br> The API can be used to control the Python script's settings. Besides the API, there are other ways the OS settings can be modified:
+   - using Raspberry Pi Imager, when installing the OS
+   - controlling it directly, using a keyboard and a display (the board can be taken out of the central unit with ease)
+   - through SSH
 
-### Design-ul Produsului & Sustenabilitate - Materiale reciclate
-Stația este realizată cu materiale reciclate, provenite din obiecte precum becuri, jucării, ambalaje de alimente, hard disk-uri electronice și electroncasnice uzate. Acestea puteau să ajungă într-un coș de gunoi, însă soarta lor a fost schimbată de Nanotool.
+###  Product design & Sustainability - Recycled materials
+The station is made using recycled materials, from sources such as lightbulbs, toys, food packaging, HDDs, electronic devices and electrical appliances. These could end up in a bin, but their fate was changed by Nanotool.
 
-Design-ul Nanotool este unul modern, simplist și modular, bazat pe elemente transparente ce expun componentele mecanice ale senzorilor custom-made, și cele electronice ale unității centrale. Chiar dacă este în mare parte realizat cu materiale reciclate, Nanotool se ridică la standardele industriale, dovedind o rigiditate sporită și rezistență la factorii de mediu, având și o eficiență sporită din punct de vedere termic.
+Nanotool's design is modern, simple, and modular, based on transparent elements that expose the custom-made sensors' mechanical components, and the electrical ones of the central unit. Even if itis made with recycled materials, Nanotools stands up to industrial standards, proving have increased rigidity and be resistant to environment factors, and also having an increased efficiency from a thermal point of view.
 
-### Display-ul LCD & Librăria CharPi
-Toate valorile importante înregistrate de senzori sunt afișate pe display-ul Hitachi HD44780 cu backpack I²C de 80 de caractere. Acesta are rata de refresh adaptivă, informațiile fiind actualizate pe display doar atunci când este nevoie. Pentru comunicarea cu acesta, Nanotool folosește librăria [CharPi](https://www.github.com/iCMDgithub/CharPi), realizată tot de creatorul stației Nanotool.
+### LCD Display & CharPi library
+All important sensor values are displayed on the 80-character, Hitachi HD44780 LCD with an I²C backpack. This display has an adaptive refresh rate - the display is refreshed only when data changes. To communicate with the display, Nanotool uses the [CharPi](https://www.github.com/iCMDgithub/CharPi) library, also made by the Nanotool's creator.
 
 ### I2C
-Multe dintre componentele utilizate de Nanotool folosesc I2C pentru a comunica cu Raspberry Pi-ul:
-   - <b>LCD 20x4 HD44780</b> - display de 80 caractere
-   - <b>BMP280</b> - senzor de temperatură și presiune
-   - <b>ADS1115</b> - convertor Analog la Digital (ADC), folosit la giruetă
+Many of the components used by  Nanotool use I2C to communicate with the microcontroller:
+   - <b>LCD 20x4 HD44780</b> - 80-character display
+   - <b>BMP280</b> - temperature & pressure sensor
+   - <b>ADS1115</b> - Analog-to-Digital Converter (ADC), used for the wind direction sensor
 
-## Dependency-uri
-### Software pentru Raspberry Pi
-Software-ul ce rulează pe Raspberry Pi a fost realizat în Python 3.</br>Următoarele module non-native Python au fost folosite pentru software:
-   - <b>[CharPi](https://www.github.com/iCMDgithub/CharPi)</b> (librărie realizată de creatorul Nanotool) - folosit pentru comunicarea cu LCD-ul HD44780 prin I2C
-   - <b>Flask</b> - folosit pentru crearea server-ului web API
-   - <b>waitress</b> - folosit pentru host-ul server-ului web atunci când API-ul trebuie să ruleze cu setările de production (nu de development)
-   - <b>adafruit_dht</b> - folosit pentru comunicarea cu senzorul DHT11
-   - <b>adafruit_ads1x15</b> - folosit pentru comunicarea cu convertorul analogic la digital (ADS1115)
-   - <b>adafruit_bmp280</b> - folosit pentru comunicarea cu senzorul BMP280
-   - <b>board, busio</b> - dependency-uri pentru comunicarea cu anumiți senzori ce folosesc librăriile Adafruit CircuitPython
-   - <b>OpenCV</b> - folosit pentru analiza imaginilor capturate de cameră
-   - <b>picamera2</b> - folosit pentru comunicarea cu Raspberry Pi Camera Module v2
-   - <b>RPi.GPIO</b> - folosit pentru controlul pinilor GPIO
-   - <b>gpiozero</b> - folosit pentru a citi temperatura CPU (sau se poate folosi modulul os astfel: os.popen("vcgencmd measure_temp").read())
+## Dependencies
+### Software for Raspberry Pi
+The software that runs on the Raspberry Pi was written in Python 3.</br>The following non-native Python modules were used for thesoftware:
+   - <b>[CharPi](https://www.github.com/iCMDgithub/CharPi)</b> (library made by the Nanotool's creator) - used for communicating with the LCD through I2C
+   - <b>Flask</b> - used for creating the web API server
+   - <b>waitress</b> - used for the web server, when the API needs to run with production settings (not development)
+   - <b>adafruit_dht</b> - used for the DHT11 sensor
+   - <b>adafruit_ads1x15</b> - used for the ADC (ADS1115)
+   - <b>adafruit_bmp280</b> - used for the BMP280 sensor
+   - <b>board, busio</b> - dependencies for certain sensors that use the Adafruit CircuitPython libraries
+   - <b>OpenCV</b> - used for analysing images taken by the camera
+   - <b>picamera2</b> - used for communicating with the Raspberry Pi Camera Module v2
+   - <b>RPi.GPIO</b> - used for controlling the GPIO pins
+   - <b>gpiozero</b> - used for reading the CPU temperature (or the OS module could be used like this: os.popen("vcgencmd measure_temp").read())
    
-### Aplicația iOS & Mac Catalyst
-Aplicația a fost realizată în întregime folosind limbajul Swift.
-Au fost folosite următoarele framework-uri <i>native</i> ale iOS SDK:
-   - <b>SwiftUI</b> - folosit pentru UI
-   - <b>WidgetKit</b> - folosit pentru crearea widget-urilor pentru Home Screen și Today View pe dispozitivele iOS.
-   - <b>Intents & IntentsUI</b> - folosit pentru configurarea widget-urilor de pe Home Screen-ul device-urilor iOS.
+### iOS & Mac Catalyst App
+The app was entirely made using the Swift programming language.
+The following <i>native</i> iOS SDK frameworks were used:
+   - <b>SwiftUI</b> - used for the user interface
+   - <b>WidgetKit</b> - used for creating Home Screen & Today View widgets for iOS devices
+   - <b>Intents & IntentsUI</b> - used for managing the widgets' settings from the iOS Home Screen
 
 ## License
-Imaginile din acest repo nu se supun condiților din licența codului open-source.
-Folosirea imaginilor in orice scop fără aprobarea creatorului acestui repo, cu excepția în care legislația permite acest lucru, este interzisă.
+The assets (images) provided in this repo and Xcode project are not subject to the code open-source license. Usage of these assets in any way, without the creator's consent is prohibited, unless the law permits it.
 
-Licența poate fi accesată [aici](/LICENSE).
+The license can be accessed [here](/LICENSE).
 
 ## Legal
-iPhone, iPad, iPadOS, Mac și Mac Catalyst sunt mărci comerciale ale Apple Inc., înregistrate în S.U.A. și în alte țări și regiuni.<br/> IOS este o marcă comercială sau o marcă comercială înregistrată a Cisco, în S.U.A. și în alte țări.<br/>Raspberry Pi este o marcă a Raspberry Pi Ltd.
+iPhone, iPad, iPadOS, Mac and Mac Catalyst are trademarks of Apple Inc., registered in USA and other countries and regions.<br/> IOS is a trademark or a registered trademark of Cisco, in USA and other countries.<br/>Raspberry Pi is a trademark of Raspberry Pi Ltd.
